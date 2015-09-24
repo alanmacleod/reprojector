@@ -1,10 +1,19 @@
 /**
- * Created by alan on 27/05/15.
+ * Created by alan on 23/09/15.
  */
 
 /**
  *
- *                          NOTE : Here's the Meat. I've summarised each method below....
+ *                         this is where the processing is done now, not server.js
+ *                         whole project is hacky and needs to be re-written in python and output PNG
+ *
+ *                         TODO:    Investigate bilinear filtering problem
+ *                         TODO:    Check quadrilateral output is perspective correct
+ *                         TODO:    Investigate heuristic imagetile-alignment options
+ *                         TODO:    Investigate colour correction/matching options
+ *                         TODO:    Investigate multi-directional photography options (one flight or several linear angles)
+ *
+ *
  */
 Math.sinh = Math.sinh || function(x) {
     return (Math.exp(x) - Math.exp(-x)) / 2;
