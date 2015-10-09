@@ -1,6 +1,10 @@
 reprojector
 -----------
 
+What it does and how it works...
+
+Extracts ortho map tiles for use in popular mapping software from oblique photography. Process is straightforward; the kind of map tiles you see in standard WebMercator applications have a fixed position on the surface of the earth. Therefore, simply calculate the cartesian coordinates of these tiles, find the ones which sit inside our photograph (using captured camera orientation data) project the tile geometry into the photo-space, and then simply extract the pixels bounded by the transformed tile followed by a perspective transformation to a square 256x256.
+
 Meat is in process.js
 
 There are two methods or options for extracting tiles:
